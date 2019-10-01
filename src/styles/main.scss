@@ -1,0 +1,143 @@
+.chat__flex {
+  background: #f9f7f2;
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  span {
+    font-size: 13px;
+    color: #ff4641;
+    font-family: "Kievit Pro Regular";
+  }
+  h5 {
+    font-family: "Kievit Pro Bold";
+    font-size: 18px;
+  }
+  p {
+    font-family: "Kievit Pro Regular";
+    font-weight: 400;
+    font-size: 16px;
+  }
+  h1 {
+    margin-bottom: 25px;
+  }
+  &__divider {
+    width: 2px;
+    height: 758px;
+    background: #ebe9e4;
+    margin: 0px 24px;
+  }
+  &__admin {
+    flex: 1;
+  }
+  &__user {
+    flex: 1;
+  }
+  &__app {
+    background: #fff;
+    height: 594px;
+    position: relative;
+    &__top {
+      width: 100%;
+      position: absolute;
+      z-index: 1000;
+      background: #ffffff;
+      border-bottom: 1px solid #ececec;
+      top: 0;
+      left: 0;
+      padding: 27px 19px 27px 27px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 44px;
+        height: 44px;
+        margin-right: 19px;
+      }
+      &__name {
+        h5 {
+        }
+        span {
+          font-size: 13px;
+          color: #ff4641;
+          img {
+            width: auto;
+            height: auto;
+            margin-right: 3px;
+          }
+        }
+      }
+      &__rates {
+        margin-left: auto;
+        img {
+          width: auto;
+          height: auto;
+          margin-right: 3px;
+          &:last-child {
+            margin: 0px;
+          }
+        }
+      }
+    }
+    ul {
+      overflow-y: auto;
+      height: inherit;
+      list-style: none;
+      padding: 0px 14px;
+      li {
+        margin: 0px;
+        display: flex;
+        background: #f9f7f2;
+        padding: 12px 40px 12px 12px;
+        img {
+          width: 44px;
+          height: 44px;
+          margin-right: 19px;
+        }
+        span {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          color: #9d9d9d;
+          font-size: 11px;
+        }
+        &:nth-child(even) {
+          background: none;
+        }
+      }
+    }
+    &__bottom {
+      padding: 27px;
+      align-items: center;
+      display: flex;
+      border-top: 1px solid #ececec;
+      background-color: #fff;
+      margin-bottom: 134px;
+      img{
+        margin-right: 19px;
+      }
+      input {
+        width: 270px;
+        font-size: 15px;
+        font-family: "Kievit Pro Regular";
+        height: 49px;
+        padding: 14px 30px 16px 24px;
+        font-weight: 400;
+        background: #ffffff;
+        color: #A3A2A2;
+        border: 1px solid #ececec;
+        box-sizing: border-box;
+      }
+      button {
+        box-sizing: border-box;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 15px;
+        img {
+          margin-right: 0px;
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+  }
+}
